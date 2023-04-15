@@ -1,9 +1,9 @@
 const os = require("os");
 
-console.log(os.cpus());
+console.log("cpus", os.cpus());
 
-console.log(os.freemem());
+console.log("freemem", os.freemem());
 
-console.log(os.homedir());
+console.log("homedir", os.homedir());
 
-console.log(os.type());
+console.log("type", os.type());
