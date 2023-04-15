@@ -5,7 +5,7 @@ console.log(path.resolve('teste.txt'))
 
 // formar path
 const midFolder = 'relatorios'
-const fileName = 'matheus.txt'
+const fileName = 'marcos.txt'
 
 const finalPath = path.join('/', 'arquivos', midFolder, fileName)
 
