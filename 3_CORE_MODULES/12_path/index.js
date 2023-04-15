@@ -1,7 +1,11 @@
-const path = require('path')
+const path = require("path");
 
-const customPath = '/relatorios/matheus/relatorio1.pdf'
+const customPath = "/relatorios/marcos/relatorio1.pdf";
 
-console.log(path.dirname(customPath))
-console.log(path.basename(customPath))
-console.log(path.extname(customPath))
+console.log("dirname", path.dirname(customPath));
+console.log("basename", path.basename(customPath));
+console.log("extname", path.extname(customPath));
+
+// /relatorios/marcos
+// relatorio1.pdf
+// .pdf
