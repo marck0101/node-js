@@ -18,11 +18,14 @@ const server = http.createServer((req, res) => {
       return res.end();
     });
   } else {
+    // quando receber um nome vou passar para um arquivo(arquivo.txt)
     fs.writeFile("arquivo.txt", name, function (err, data) {
+      // quando o arquivo for escrito posso executar algo
       res.writeHead(302, {
-        Location: "/",
+        // 302 é um status redirect
+        Location: "/", // depois de submeter o formulário, neste caso vai mandar o usuário para "/"
       });
-      return res.end();
+      return res.end(); // fim da requisição
     });
   }
 });
