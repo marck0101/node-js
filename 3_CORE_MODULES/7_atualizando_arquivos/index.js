@@ -18,8 +18,9 @@ const server = http.createServer((req, res) => {
       return res.end();
     });
   } else {
-    const nameNewLine = name + "\r\n";
-
+    const nameNewLine = name + "\r\n"; // pego o nome que vai vir e adiciono uma nova linha
+    // /r/n vai garantir que vai dar certo a operação indiferente do sistema operacional
+    
     fs.appendFile("arquivo.txt", nameNewLine, function (err, data) {
       res.writeHead(302, {
         Location: "/",
